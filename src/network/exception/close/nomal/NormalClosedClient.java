@@ -32,7 +32,7 @@ public class NormalClosedClient {
     }
 
     private static void readByBufferedReader(InputStream input, Socket socket) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader());
+        BufferedReader br = new BufferedReader(new InputStreamReader(input));
         String readString = br.readLine();
         log("readString = " + readString);
         br.close();
