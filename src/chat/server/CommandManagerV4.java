@@ -27,6 +27,7 @@ public class CommandManagerV4 implements CommandManager{
     예를 들어 /join 이라는 메세지가 들어왔다면 JoinCommand의 인스턴스가 반환된다.
     -Command를 찾았다면, 다형성을 활용해서 구현체의 excute()메서드를 호출한다.
     -만약 찾을수 없다면 처리할수 없는 명령어이다.
+    -기본
      */
     @Override
     public void execute(String totalMessage, Session session) throws IOException {
