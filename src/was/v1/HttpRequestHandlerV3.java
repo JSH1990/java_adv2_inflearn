@@ -107,6 +107,6 @@ public class HttpRequestHandlerV3 implements Runnable {
         writer.println("<li>query: " + query + "</li>");
         writer.println("<li>decode: " + decode + "</li>");
         writer.println("</ul>");
-        writer.flush();
+        writer.flush();//test
     }
 }
